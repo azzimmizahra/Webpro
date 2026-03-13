@@ -1,0 +1,42 @@
+<!-- Haifa Zahra Azzimmi - 2311102163 - IF1103 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Efek Animasi - Haifa Zahra Azzimmi</title>
+
+    <!-- Memanggil library jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            // ketika tombol diklik
+            $("#startAnimasi").click(function(){
+
+                $(".kotak").animate({
+                    height: "toggle",
+                    width: "toggle"
+                }, "slow");
+
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <p>Klik tombol di bawah untuk menjalankan animasi pada kotak.</p>
+
+    <!-- tombol animasi -->
+    <button id="startAnimasi">Mulai Animasi</button>
+
+    <p>Animasi ini akan membuat kotak berubah ukuran dan muncul/hilang.</p>
+
+    <!-- objek yang dianimasikan -->
+    <div class="kotak" style="background:#5f9ea0;height:120px;width:120px;position:absolute;"></div>
+
+</body>
+</html>

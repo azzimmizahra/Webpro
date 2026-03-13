@@ -1,0 +1,41 @@
+<!-- Haifa Zahra Azzimmi - 2311102163 - IF1103 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Efek Hide Show - Haifa Zahra Azzimmi</title>
+
+    <!-- Memanggil library jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS eksternal -->
+    <link rel="stylesheet" href="efekHide.css">
+
+    <script>
+        $(document).ready(function(){
+
+            // fungsi untuk menyembunyikan teks
+            $("#btnHide").click(function(){
+                $("p").fadeOut("slow");
+            });
+
+            // fungsi untuk menampilkan kembali teks
+            $("#btnShow").click(function(){
+                $("p").fadeIn("slow");
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- teks yang akan diberi efek -->
+    <p>Halo! Tekan tombol di bawah untuk mencoba efek hide dan show menggunakan jQuery.</p>
+
+    <!-- tombol aksi -->
+    <button id="btnHide">Hide Text</button>
+    <button id="btnShow">Show Text</button>
+
+</body>
+</html>

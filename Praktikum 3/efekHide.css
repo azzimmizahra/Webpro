@@ -1,0 +1,27 @@
+/* Haifa Zahra Azzimmi - 2311102163 */
+
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+p{
+    font-size: 20px;
+    color: #333;
+}
+
+button{
+    padding: 10px 18px;
+    margin: 10px;
+    border: none;
+    background-color: #7a3b69;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #a0528a;
+}
