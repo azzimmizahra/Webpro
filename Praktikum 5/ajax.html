@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX jQuery</title>
+
+    <!-- PANGGIL JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h2>Contoh AJAX</h2>
+
+<input type="text" id="nama" placeholder="Masukkan nama">
+<button id="kirim">Kirim</button>
+
+<p id="hasil"></p>
+
+<script>
+$(document).ready(function(){
+    $("#kirim").click(function(){
+        var nama = $("#nama").val();
+
+        $.ajax({
+            url: "proses.php",
+            type: "POST",
+            data: {nama: nama},
+            success: function(response){
+                $("#hasil").html(response);
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
